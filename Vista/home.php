@@ -7,13 +7,6 @@
     <title><?php echo $data['tag_page']; ?></title>
 </head>
 <body>
-    <?php 
-        dep($data); 
-    ?>
-    <!-- <h1><?php echo $data['page_title']; ?></h1>
 
-    <?php print_r($data); ?> -->
-
-    <?php echo token(); ?>
 </body>
 </html>
