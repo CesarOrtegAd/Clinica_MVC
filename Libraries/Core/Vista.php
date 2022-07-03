@@ -1,11 +1,11 @@
 <?php
     class Vista{
-        function getView($controller,$view){
+        function getView($controller,$view,$data=""){
             $controller = get_class($controller);
             if($controller == "Home"){
-                $view = VISTA.$view.".php";
+                $view = "Vista/".$view.".php";
             }else{
-                $view = VISTA.$controller."/".$view.".php";
+                $view = "Vista/".$controller."/".$view.".php";
             }
             require_once($view);
         }

@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica</title>
+    <title><?php echo $data['tag_page']; ?></title>
 </head>
 <body>
-    <h1>BIENVENIDO</h1>
+    <?php 
+        dep($data); 
+    ?>
+    <!-- <h1><?php echo $data['page_title']; ?></h1>
+
+    <?php print_r($data); ?> -->
+
+    <?php echo token(); ?>
 </body>
 </html>
